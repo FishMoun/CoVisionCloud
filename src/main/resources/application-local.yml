@@ -1,8 +1,0 @@
-# 对象存储配置（需要从腾讯云获取）
-cos:
-  client:
-    host: https://covision-1322380691.cos.ap-shanghai.myqcloud.com
-    secretId: AKID7F9pHWWHn45rQk07B8xc4HFzUaS9djiV
-    secretKey: ax61kEWZP1PcgYEfsqaM0QcbMtEF1Yrx
-    region: ap-shanghai
-    bucket: covision-1322380691
