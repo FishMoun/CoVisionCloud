@@ -3,10 +3,7 @@ package com.fishmoun.covision.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.fishmoun.covision.model.dto.picture.PictureQueryRequest;
-import com.fishmoun.covision.model.dto.picture.PictureReviewRequest;
-import com.fishmoun.covision.model.dto.picture.PictureUploadByBatchRequest;
-import com.fishmoun.covision.model.dto.picture.PictureUploadRequest;
+import com.fishmoun.covision.model.dto.picture.*;
 import com.fishmoun.covision.model.entity.Picture;
 import com.fishmoun.covision.model.entity.User;
 import com.fishmoun.covision.model.vo.PictureVO;
@@ -66,6 +63,12 @@ public interface PictureService extends IService<Picture> {
     );
 
     void clearPictureFile(Picture oldPicture);
+
+    void checkPictureAuth(User loginUser, Picture picture);
+
+    void deletePicture(long pictureId, User loginUser);
+
+    void editPicture(PictureEditRequest pictureEditRequest, User loginUser);
 }
 
 
