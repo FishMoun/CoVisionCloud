@@ -3,6 +3,7 @@ package com.fishmoun.covision.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fishmoun.covision.api.aliyunai.model.CreateOutPaintingTaskResponse;
 import com.fishmoun.covision.model.dto.picture.*;
 import com.fishmoun.covision.model.entity.Picture;
 import com.fishmoun.covision.model.entity.User;
@@ -75,6 +76,7 @@ public interface PictureService extends IService<Picture> {
 
     void editPictureByBatch(PictureEditByBatchRequest pictureEditByBatchRequest, User loginUser);
 
+    CreateOutPaintingTaskResponse createPictureOutPaintingTask(CreatePictureOutPaintingTaskRequest createPictureOutPaintingTaskRequest, User loginUser);
 //    void batchEditPictureMetadata(PictureBatchEditRequest request, Long spaceId, Long loginUserId);
 }
 
