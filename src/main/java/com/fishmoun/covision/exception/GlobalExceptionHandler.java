@@ -27,6 +27,7 @@ public class GlobalExceptionHandler {
         return ResultUtils.error(ErrorCode.NO_AUTH_ERROR, e.getMessage());
     }
 
+
     @ExceptionHandler(BusinessException.class)
     public BaseResponse<?> businessExceptionHandler(BusinessException e) {
         log.error("BusinessException", e);
@@ -38,4 +39,5 @@ public class GlobalExceptionHandler {
         log.error("RuntimeException", e);
         return ResultUtils.error(ErrorCode.SYSTEM_ERROR, "系统错误");
     }
+
 }
