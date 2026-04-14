@@ -679,8 +679,8 @@ CREATE TABLE space_user (
 
 ## 联系方式
 
-- **项目维护者**：CoVision Team
-- **问题反馈**：提交 Issue 或联系维护者
+- **项目维护者**：FishMoun
+- **问题反馈**：提交 Issue 
 
 ---
 
